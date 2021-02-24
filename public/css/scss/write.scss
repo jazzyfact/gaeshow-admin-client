@@ -1,0 +1,122 @@
+@import './reset';
+@import './ui';
+@import './default.scss';
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    // grid-template-rows: 100px 1fr 100px;
+    // 5vh로 해야 푸터가 안늘어남!
+    // grid-template-rows: 5vh 90vh 4vh;
+    grid-template-rows: 3vh minmax(150vh, auto);
+}
+
+.footer {
+    background-color: #343a40;
+    grid-column: 1 / span 6;
+}
+
+.main {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+    background-color: #fff;
+
+      > * {
+        margin-bottom: 1rem;
+      }
+      //공지사항 타이틀
+      >h3{
+        font-size: 2rem;
+        font-weight: bold;
+        }
+        //공지사항 설명
+      >p{
+        font-size: 1rem;
+        font-weight: bold;
+        
+    }
+
+    .header {
+   
+
+        width: 100%;
+        padding-bottom: 30rem;
+   
+    }
+
+    .p__warning {
+        &--bold {
+            margin-top: 3rem;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            
+        }
+       
+    }
+
+   
+
+    .input__signup {
+        &--text {
+            font-size: 1rem;
+            width: 100%;
+            height: 1rem;
+            padding: 0.5rem 0 0.5rem 0.5rem;
+
+            border: 1px solid black;
+
+            ::placeholder {
+                color: #909091;
+            }
+        }
+
+        &--textarea {
+            width: 100%;
+            min-height: 30rem;
+        }
+        
+    }
+  
+//추가버튼
+    .add {
+        margin-top: 3rem;
+        justify-items: flex-end;
+        color: #edf0f1;
+        text-decoration: none;
+        padding: 5px 50px;
+        background-color: black;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease 0s;
+        // width: 100%;
+        font-size: 1.5rem;
+        justify-items: center;
+        align-self: center;
+        margin-left: auto;
+        width: 100%;
+      
+      
+    }
+
+    // .add:hover {
+    //     background-color: #15c48b;
+    // }
+
+
+   
+}
+
+strong {
+    font-weight: bold;
+    // font-weight: initial;
+}
+
+em {
+    font-style: italic;
+}

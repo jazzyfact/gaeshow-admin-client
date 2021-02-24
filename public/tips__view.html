@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" type="text/css" href="./css/portfolio__view.css">
+</head>
+
+<!-- 프리랜서팁 -->
+<body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav">
+    </nav>
+    <div class="container">
+        <div class ="header__top">
+         <!-- <div class="header__top-logo">GAESHOW Admin</div>
+         <div class="header__top-search">Search</div>--> 
+         <div class="header__top-logout" id="logoutBtn">로그아웃</div>
+         <div class="header__top--snackbar" ></div>
+     </div>
+    <aside class="body__item aside">
+        <p>GAESHOW Admin</p> 
+        <ul class="aside__top--open">
+           
+                <!-- 회원관리 -->
+                <a class="aside__title">
+                    <li>회원관리</li>
+                    <p>></p>
+                </a>
+                <a class="aside__sub" href="./index.html">
+                    <li>유저</li>
+                </a>
+                <a class="aside__sub" href="./admin__list.html">
+                    <li>관리자</li>
+                </a>
+    
+        </ul>
+         <!-- 커뮤니티관리 -->
+         <ul class="aside__top--open">
+            <a class="aside__title">
+                <li>커뮤니티관리</li>
+                <p>></p>
+            </a>
+            <a class="aside__sub" href="./board.html">
+                <li>게시글</li>
+            </a>
+            <a class="aside__sub" href="./ide.html">
+                <li>IDE 추천</li>
+            </a>
+            <a class="aside__sub" href="./language.html">
+                <li>언어 추천</li>
+            </a>
+            <a class="aside__sub" href="./comments.html">
+                <li>댓글</li>
+            </a>
+            
+        </ul>
+              <!-- 광고 -->
+        <ul class="aside__top--open">
+            <a class="aside__title">
+                <li>광고</li>
+                <p>></p>
+            </a>
+            <a class="aside__sub" href="./ad.html">
+                <li>광고</li>
+            </a>
+        </ul>
+              
+        <ul class="aside__top--open">
+            <!-- 고객센터 -->
+            <a class="aside__title">
+            <li>고객센터</li>
+            <p>></p>
+            </a>
+            <a class="aside__sub"  href="./notice.html">
+                <li>공지사항</li>
+                </a>
+                <a class="aside__sub" href="./faq.html">
+                    <li>자주하는질문</li>
+                    </a>
+            <a class="aside__sub" href="./question.html">
+            <li>문의하기</li>
+            </a>
+        <a class="aside__sub" href="./report.html">
+            <li>신고하기</li>
+            </a>
+        </ul>
+    </aside>
+
+    <main class="body__item main">
+      
+
+        <header class="view">
+            <div class="view__main">
+                <h3 id="title">환불원정대</h3>
+                <p>
+                    <span id="date">2020.11.01 오후 11:00</span>
+                    <span>조회수 <b id="viewCount">1</b>회</span>
+                    <span>공유횟수 <b id="sharedCount">0</b></span>
+                </p>
+            </div>
+            <div class="view__user">
+                <div class="view__user--stars">
+                    <figure id="likedBtn">
+                        <img id="likedImg" src="./res/img/icon_like_df.svg" />
+                        <figcaption id="liked">0</figcaption>
+                    </figure>
+                    <figure id="bookmarkedBtn">
+                        <img id="bookmarkedImg" src="./res/img/icon_bookmark_df.svg" />
+                        <figcaption id="bookmarked">0</figcaption>
+                    </figure>
+                </div>
+                <figure class="view__user--des">
+                    <img id="profileImg" src="./res/img/icon_google.svg" alt="프로필이미지">
+                    <figcaption id="nickname">환불원정대</figcaption>
+                    <figcaption id="writerInfo" class="hidden"></figcaption>
+                </figure>
+                <div class="view__user--ext">
+                    <p>공유하기</p>
+                    <p>게시글 신고하기</p>
+                </div>
+            </div>
+        </header>
+        <section class="document">
+            <div class="document__text ql-container ql-snow ql-disabled" id="content"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="false"><h3><strong>The standard Lorem Ipsum passage, used since the 1500s</strong></h3><p class="ql-align-justify">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p><h3><strong>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</strong></h3><p class="ql-align-justify">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p><h3><strong>1914 translation by H. Rackham</strong></h3><p class="ql-align-justify">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p><h3><strong>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</strong></h3><p class="ql-align-justify">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p><h3><strong>1914 translation by H. Rackham</strong></h3><p class="ql-align-justify">"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div></div>
+            <div class="document__tools" id="tagsWrapper"><p class="orange--bg">1</p><p class="orange--bg">2</p><p class="orange--bg">3</p><p class="orange--bg">4</p><p class="orange--bg">5</p></div>
+        </section>
+        <section class="comment">
+            <header class="comment__header">
+                <h4>
+                    댓글 (<b id="commentCount">2</b>개)
+                </h4>
+            </header>
+            <div class="comment__list" id="commentList">
+                <div class="comment__list--item" idx="12">
+                    <p class="comment__list--content">프리랜서 댓글</p>
+                    <p class="comment__list--date">2020.11.01 오전 10:10</p>
+                    <div class="comment__list--user">
+                        <figure class="comment__list--user--info">
+                            <img src="./res/img/icon_google.svg" alt="프로필 이미지">
+                            <figcaption>은비</figcaption><p></p>
+                        </figure>
+                        <div class="comment__list--user--post">
+                            <figure>
+                                <img src="./res/img/icon_star.svg" alt="좋아요 아이콘">
+                                <figcaption>0</figcaption>
+                            </figure>
+                            <p id="commentAdd">
+                                댓글달기</p>
+                                <p>신고하기</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment__list--answer" idx="12">
+                        <div class="comment__list--answer--content">
+                            <p>┕</p>
+                            <p class="comment__list--content">프리랜서 대댓글</p>
+                        </div>
+                        <p class="comment__list--date">2020.11.01 오후 8:07</p>
+                        <div class="comment__list--user">
+                            <figure class="comment__list--user--info">
+                                <img src="./res/img/icon_google.svg" alt="프로필 이미지">
+                                <figcaption>지미유</figcaption>
+                                <p></p>
+                            </figure>
+                            <div class="comment__list--user--post">
+                                <figure>
+                                    <img src="./res/img/icon_star.svg" alt="좋아요 아이콘">
+                                    <figcaption>0</figcaption>
+                                </figure>
+                                <p></p>
+                                <p>신고하기</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <div class="body__item--paging" id="pagination"></div>
+
+        <article class="comment__add">
+            <textarea id="addCommentContent"></textarea>
+            <button id="addCommentBtn">등록하기</button>
+        </article>
+
+    </main>
+    <div class="footer">Footer</div>
+</body>
+
+
+
+</html>

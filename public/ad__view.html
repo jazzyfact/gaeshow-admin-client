@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/workspace__view.css">
+      <script src="./js/Controller/includeHTML.js"></script>
+    <link rel="stylesheet" type="text/css" href="./res/library/quill/dist/quill.snow.css">
+    <script defer src="./res/library/quill/dist/quill.js"></script>
+    <script defer src="./res/library/quill/quill-image-resize/image-resize.min.js"></script>
+</head>
+   
+
+
+<body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav">
+    </nav>
+    <div class="container">
+        <div class ="header__top">
+         <!-- <div class="header__top-logo">GAESHOW Admin</div>
+         <div class="header__top-search">Search</div>--> 
+         <!-- <div class="header__top-logout" id="logoutBtn">로그아웃</div> -->
+         <div class="header__top--snackbar" ></div>
+     </div>
+<!-- 업무얘기공유 -->
+    <aside class="body__item aside">
+        <div include-html="./header.html"></div>     
+    </aside>
+    <main class="body__item main">
+        <header class="header">
+            <div class="header__main">
+                <!-- 카테고리 이름 -->
+                <h1 id="categoryTitle"></h1>
+                <!-- 게시물 제목 -->
+                <h3 id="title"></h3>
+                <!-- 게시물 정보들 -->
+                <p>
+                    <!-- <span>광고등록일 <b id="viewCount"></b>회</span> -->
+                    <span>광고시작일 <b id="adStartAt"></b></span>
+                    <br><br>
+                    <span>광고종료일 <b id="adEndAt"></b></span>
+                    <!-- <span>마지막수정일<b id="updatedAt"></b></span> -->
+                    <br><br><br>
+                    <span class="date" id="createSpan">광고등록일</span><b id="createAt"></b>
+                    <br><br>
+                    <span class ="date"id="stopSpan">광고정지일</span><b id="stoppedAt"></b>
+                    <br><br>
+                    <span class ="date"id="deleteSpan">마지막수정일</span><b id="updatedAt"></b>
+                    <br><br>
+                    <span class ="date"id="locationSpan">광고위치</span><b id="location"></b>
+                </p>
+            </div>
+            <!-- 유저 프로필 정보 -->
+            <div class="header__user">
+                <figure class="header__user--des">
+                   
+             <span>제휴회원번호</span><figcaption id="userId"></figcaption>
+             <span>제휴회원닉네임</span><figcaption id="nickname"></figcaption>
+            
+             
+           
+            </figure>
+            
+           
+                
+            </div>
+                   <!-- 수정/삭제버튼 -->
+       <span class ="hover" id="edit"></span> &nbsp&nbsp
+       <span class ="hover" id="stop"></span>
+        </header>
+
+        </section>
+
+      
+
+
+        <!-- 이미지 사진 -->
+        <section class="img" id="imgView">
+            <figure>
+                <img id="selectedImg" src="" />
+            </figure>
+        </section>
+        <!-- 내용 -->
+        <section class="document">
+            <div class="document__tools" id="tagsWrapper"></div>
+            <div class="document__text" id="content"></div>
+              
+        </section>
+    </main>
+    <!-- <div class="footer">Footer</div> -->
+</body>
+<script>includeHTML();</script>
+<script  defer type="module" src="./js/on.load.js"></script>
+
+</html>

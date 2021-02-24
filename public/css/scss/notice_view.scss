@@ -1,0 +1,176 @@
+@import './reset';
+@import './ui';
+@import './default.scss';
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    // grid-template-rows: 100px 1fr 100px;
+    // 5vh로 해야 푸터가 안늘어남!
+    // grid-template-rows: 5vh 90vh 4vh;
+    // 여기 수정해야 할 수도 있음! 푸터가이상함, 지금은 푸터가 늘어나지않고 잘나옴
+    grid-template-rows: 3vh minmax(180vh, auto);
+}
+
+.footer {
+    background-color: #343a40;
+    grid-column: 1 / span 6;
+}
+.main {
+    // padding: 0 20%;
+
+    margin: 0rem 1%;
+    background-color: #ffffff;
+
+    //게시판타이틀
+    >h3 {
+        margin: 0rem 5%;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 5rem;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        padding: 0 15%;
+        margin-top: 20px;
+        margin-bottom: 3rem;
+
+        //제목
+        >h3 {
+        font-size: 1.3rem;
+        font-weight: bold;
+        }
+
+
+        > p {
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-top: auto;
+            margin-left: auto;
+            justify-content: flex-end;
+        }
+
+
+        //작성일
+        .create{
+            justify-content: flex-end;
+            align-content: flex-end;
+        }
+        
+    }
+}
+
+.index {
+    margin-top: auto;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+
+
+
+.document {
+    
+    margin: 0rem 15%;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    // border: 1px solid #000000;
+
+    &__text {
+        margin-top: 3rem;
+        margin: 3rem 0;
+        font-size: 1rem;
+        min-height: 300px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+.btn {
+    border-top: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin: 0rem 10%;
+   
+
+    &__edit {
+        // justify-items: flex-end;
+        margin-top: 50px;
+        color: #edf0f1;
+        margin-right: 10px;
+        text-decoration: none;
+        padding: 9px 25px;
+        background-color: #343a40;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease 0s;
+    }
+
+    &__delete {
+        margin-top: 50px;
+        justify-items: flex-end;
+        color: #edf0f1;
+        text-decoration: none;
+        padding: 9px 25px;
+        background-color: #ff0b0b;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease 0s;
+    }
+}
+
+.edit {
+    //   margin-left: 250px;
+    justify-items: flex-end;
+    color: #edf0f1;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: #343a40;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.delete {
+    justify-items: flex-end;
+    color: #edf0f1;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: #ff0b0b;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+
+
+    
+
+.hover{
+
+    cursor: pointer;
+   
+    
+    }
+
+    .cusor{
+
+        cursor: pointer;
+    }
+
+//퀼 에디터 글씨체 볼드
+strong {
+        font-weight: bold;
+}

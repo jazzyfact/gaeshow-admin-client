@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./css/ad__write.css">
+    <script src="./js/Controller/includeHTML.js"></script>
+    <link  rel="stylesheet" type="text/css" href="./res/library/flatpickr/flatpickr.min.css">
+    <script  defer src="res/library/flatpickr/flatpickr.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+</head>
+
+<body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav"></nav>
+    <div class="container">
+        <div class ="header__top">
+         <!-- <div class="header__top-logout" id="logoutBtn">로그아웃</div> -->
+     </div>
+     <aside class="body__item aside">
+        <div include-html="./header.html"></div>     
+    </aside>
+    <main class="body__item main">
+        <h3>광고 등록</h3>
+      
+      
+        <div class="input__signup--select--wrapper">
+            <p class="p__warning--bold">
+                제휴업체 조회
+            </p>
+            <!-- <label class="input__signup--select--label">▼</label> -->
+            <select class="category__select--main" id="affiliateSelector" autocomplete="off">
+                <option value="" disabled selected>제휴업체를 선택하세요</option>
+            </select>
+        </div>
+
+        <div class="input__signup--select--wrapper">
+            <p class="p__warning--bold">
+                광고 위치
+            </p>
+            <!-- <label class="input__signup--select--label">▼</label> -->
+            <select class="category__select--main" id="location" autocomplete="off">
+                <option value="" disabled selected>광고위치를 선택하세요</option>
+                <!-- <option value="product" >상품 </option>
+                <option value="community">커뮤니티</option> -->
+            </select>
+        </div>
+
+       
+        <div>
+            <p class="p__warning--bold">
+                광고시작일
+            </p>
+            <input class="input__signup--text flatpickr flatpickr-input" id="adStartAt" type="text" value=""
+                placeholder="출시일 또는 작업 완료일을 입력해주세요" />
+        </div>
+        <div>
+            <p class="p__warning--bold">
+                광고종료일
+            </p>
+            <input class="input__signup--text flatpickr flatpickr-input" id="adEndAt" type="text" value=""
+                placeholder="출시일 또는 작업 완료일을 입력해주세요" />
+        </div>
+        <div class="workspace">
+            <div class="workspace__imgWrap hidden" id="selecImgWrap">
+                <img src="" class="workspace__imgWrap__img" id="selectImgView" />
+                <label id="selectDeleteBtn">X</label>
+               
+            </div>
+            <label class="workspace__label" id="selectLabel" for="selectImg">
+                <b>+</b>
+                광고 이미지 선택하세요
+            </label>
+            <input class="workspace__input" type="file" id="selectImg" />
+        </div>
+      
+        <button class="add" id="addPost">등록하기</button>
+    </main>
+ 
+</body>
+<script>includeHTML();</script>
+<script type="module" src="./js/on.load.js"></script>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/ide.css">
+        <script src="./js/Controller/includeHTML.js"></script>
+    </head>
+ <body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav"></nav>
+    <div class="container">
+        <div class ="header__top">
+  
+     </div>
+     <aside class="body__item aside">
+        <div include-html="./header.html"></div>    
+    </aside>
+    <main class="body__item main">
+        <div class="faq__table">
+              <div class="faq__table">
+                  <div class="table">
+                      <span class="table__name">
+                          <h1>IDE추천 댓글 목록</h1></span>
+                      <div class="table__dropdowns">
+                          
+                        <select class="category__select--wrapper" id="filterSelect" autocomplete="off">
+                            <!-- <option value="default" selected>필터선택</option> -->
+                            <option value="all" selected>전체 댓글</option>
+                            <option value="delete" >삭제된 댓글</option>
+                            <option value="notDelete">삭제되지 않은 댓글</option>  
+                        </select>
+                           <!-- 검색필터 -->
+                        <div class="category__select">
+                            <!-- <label class="category__select--label">▼</label> -->
+                            <select class="category__select--wrapper" id="searchType" autocomplete="off">
+                                <option value="blank"selected >검색필터선택</option>
+                                <option value="advantage">장점</option>
+                                <option value="disadvantage">단점</option>
+                                <option value="nickname">닉네임</option>  
+                            </select>
+                            </div>
+                        <figure class="category__search">
+                                <img src="./res/img/icon_search.svg" />
+                                <input type="text" id="searchText" value="" placeholder="필터 선택 후 검색어를 입력해주세요" />
+                            </figure>
+                            <button class="category__search--button" id="searchBtn">검색</button>
+                        </div>
+                
+                      <section class="table__header">
+                          <header class="table__header table__row" id="tableRow">
+                              <p class="table__row-data">번호</p>
+                              <p class="table__row-data">ide이름</p>
+                              <p class="table__row-data">장점</p>
+                              <p class="table__row-data">단점</p>
+                              <p class="table__row-data">평점</p>
+                              <p class="table__row-data">작성자</p>
+                              <p class="table__row-data">등록일</p>
+                              <p class="table__row-data">삭제한사람</p>
+                              <p class="table__row-data">삭제일</p>
+                              <p class="table__row-data">개쇼이동</p>
+                              <p class="table__row-data">삭제</p>
+                             
+                          </header>
+                         
+                      </section>
+                      <div class="table__content" id="ideTableSection"></div>
+      
+                      <section class='paging'>
+                        <div class="body__item--paging" id="pagingData"></div>
+                    </section>
+                  </div>
+              </div>
+                   
+      
+      </section>
+      
+      
+      </main>
+
+
+
+
+<!-- <div class="footer">Footer</div> -->
+</div>
+
+</body>
+<script>includeHTML();</script>
+<script  defer type="module" src="./js/on.load.js"></script>
+</html>

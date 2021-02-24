@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/signup.css">
+     <script src="./js/Controller/includeHTML.js"></script>
+</head>
+
+
+<body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav"></nav>
+    <div class="container">
+        <div class ="header__top">
+         <!-- <div class="header__top-logo">GAESHOW Admin</div> -->
+         <div class="header__top-search"></div>
+         <div class="header__top-logout"></div>
+     </div>
+     <aside class="body__item aside">
+        <div include-html="./header.html"></div>    
+    </aside>
+    <main class="body__item main">
+        <div class="input__login">
+            <h1>관리자 회원가입</h1>
+        </div>
+        <!-- 회원가입 폼 -->
+        <!-- <form action="" class="login__form"> -->
+        <div class="input__login">
+            <p class="input__login--title">
+                아이디
+            </p>
+            <input class="input__login--text" id="id" type="text" value="" placeholder="아이디를 입력해주세요." />
+        </div>
+        <div class="input__login">
+            <button class="input__login--btn" id="idCheckBtn">
+                아이디 중복체크
+            </button>
+        </div>
+        <div class="input__login">
+            <p class="input__login--title">
+                비밀번호
+            </p>
+            <input class="input__login--text" id="password" type="password" value="" placeholder="영문,숫자와 기호를 포함한 8~20자" />
+        </div>
+        <div class="input__login">
+            <p class="input__login--title">
+                비밀번호 확인
+            </p>
+            <input class="input__login--text" id="repeatPassword" type="password" value="" placeholder="영문,숫자와 기호를 포함한 8~20자" />
+        </div>
+        <div class="input__login">
+            <p class="input__login--title">
+                이름
+            </p>
+            <input class="input__login--text" id="name" type="text" value="" placeholder="이름을 입력해주세요." />
+        </div>
+        <div class="input__login">
+            <p class="input__login--title">
+                닉네임
+            </p>
+            <input class="input__login--text" id="nickname" type="text" value="" placeholder="닉네임을 입력해주세요." />
+        </div>
+        <div class="input__login">
+            <button class="input__login--btn" id="nickCheckBtn">
+                닉네임 중복체크
+            </button>
+        </div>
+        
+        <div class="input__login">
+            <p class="input__login--title">
+                관리자 등급
+            </p>
+           
+            <select class="category__select--option" id="gradeSeletor">
+                <option value="1" selected>총괄책임자</option>
+                <option value="2">상품매니저</option>
+                <option value="3">게시물매니저</option>
+                <option value="4">상담사</option>
+            </select>
+        </div>
+    
+        <div class="input__login">
+            <button class="input__login--btn" id="singupBtn">
+                회원가입
+            </button>
+        </div>
+<!-- </form> -->
+    </main>
+    <!-- <div class="footer">Footer</div> -->
+</body>
+
+<script>includeHTML();</script>
+<script  defer type="module" src="./js/on.load.js"></script>
+</html>

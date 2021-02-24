@@ -1,0 +1,82 @@
+// Breakpoints
+$breakpoint-mobile: 420px;
+$breakpoint-tablet: 758px;
+$breakpoint-desktop: 1024px;
+
+// 폰트
+@font-face {
+    font-family: 'notoR';
+    font-style: normal;
+    src: url('../../res/font/notoSans/NotoSans-Regular.woff2') format('woff2'), url('../../res/font/notoSans/NotoSans.woff') format('woff'),
+        url('../../res/font/notoSans/NotoSans-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'notoR-kr';
+    font-style: normal;
+    src: url('../../res/font/notoSansCJK/NotoSansCJKkr-Regular.woff2') format('woff2'), url('../../res/font/notoSansCJK/NotoSansCJKkr-Regular-Alphabetic.woff') format('woff'),
+        url('../../res/font/notoSansCJK/NotoSansCJKkr-Regular.ttf') format('truetype'), url('../../res/font/notoSansCJK/NotoSansCJKkr-Regular.eot') format('embedded-opentype');
+}
+
+// 메인
+$section__header--title--size: 2rem;
+$section__header--subTitle--size: 1rem;
+
+// 색상 변수
+$cw: white;
+$cb: black;
+
+.black {
+    color: #000000;
+}
+
+.blue {
+    color: #3a98ff;
+}
+
+.red {
+    color: #ff4d4d;
+}
+.pink {
+    color: #ff95c6;
+}
+
+.yellow--light {
+    color: #ffe200;
+}
+.black--border {
+    border: 1px solid black;
+}
+
+
+//태그 색깔
+//업무얘기(2)
+.red--bg {
+    background-color: #ea6672;
+}
+//회사욕(3)
+.yellow--bg {
+    background-color: #f6cb61;
+}
+//프리랜서 팁(4)
+.orange--bg {
+    background-color: #ef9e68;
+}
+// 워크스페이스(5)
+.gray--border {
+    border: 1px solid gray;
+}
+//자기작업물 
+//플랫폼
+.purple--bg {
+    background-color: #bd52f2;
+}
+//ide
+.green--bg {
+    background-color: #15c48b;
+}
+//언어
+.blue--bg {
+    background-color: #3a98ff;
+}
+

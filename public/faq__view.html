@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/notice_view.css">
+        <script src="./js/Controller/includeHTML.js"></script>
+     
+       
+    </head>
+ <body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav">
+    </nav>
+    <div class="container">
+        <div class ="header__top">
+         <!-- <div class="header__top-logo">GAESHOW Admin</div>
+         <div class="header__top-search">Search</div>--> 
+         <!-- <div class="header__top-logout" id="logoutBtn">로그아웃</div> -->
+         <div class="header__top--snackbar" ></div>
+     </div>
+     <aside class="body__item aside">
+        <div include-html="./header.html"></div>    
+    </aside>
+
+<main class="body__item main">
+    <h3>자주하는 질문</h3>
+    <div class="main__header">
+        <h3 id="title"></h3>
+       
+    </br><p>
+            <span>작성일 : </span><span class="create" id="createdAt"></span>
+            </br></br>
+            <span>관리자 : </span> <span id="profileNickname"></span>
+            </br></br>
+            </br></br>
+            <!-- 수정/삭제버튼 -->
+            <span class="cusor"id="edit"></span>
+            <span class="cusor"id="delete"></span>
+
+        </p>
+    </div>
+
+    <section class="document">
+    <div class="document__text" id="content" ></div>
+    </section>
+</main>
+
+
+</div>
+
+</body>
+<script>includeHTML();</script>
+<script  defer type="module" src="./js/on.load.js"></script>
+</html>

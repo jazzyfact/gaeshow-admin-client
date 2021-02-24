@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>main</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio__view.css">
+    </head>
+
+
+   <!-- 자기작업물자랑 -->
+    <body>
+        <body>
+            <header class="body__item header" id="headerBanner"></header>
+        <nav class="body__item nav" id="headerNav">
+        </nav>
+        <div class="container">
+            <div class ="header__top">
+             <!-- <div class="header__top-logo">GAESHOW Admin</div>
+             <div class="header__top-search">Search</div>--> 
+             <!-- <div class="header__top-logout" id="logoutBtn">로그아웃</div> -->
+             <div class="header__top--snackbar" ></div>
+         </div>
+         <aside class="body__item aside">
+            <p>GAESHOW Admin</p> 
+            <ul class="aside__top--open">
+               
+                    <!-- 회원관리 -->
+                    <a class="aside__title">
+                        <li>회원관리</li>
+                        <p>></p>
+                    </a>
+                    <a class="aside__sub" href="./index.html">
+                        <li>유저</li>
+                    </a>
+                    <a class="aside__sub" href="./admin__list.html">
+                        <li>관리자</li>
+                    </a>
+        
+            </ul>
+         <!-- 커뮤니티관리 -->
+         <ul class="aside__top--open">
+            <a class="aside__title">
+                <li>커뮤니티관리</li>
+                <p>></p>
+            </a>
+            <a class="aside__sub" href="./board.html">
+                <li>게시글</li>
+            </a>
+            <a class="aside__sub" href="./ide.html">
+                <li>IDE 추천</li>
+            </a>
+            <a class="aside__sub" href="./language.html">
+                <li>언어 추천</li>
+            </a>
+            <a class="aside__sub" href="./comments.html">
+                <li>댓글</li>
+            </a>
+            
+        </ul>
+              <!-- 광고 -->
+        <ul class="aside__top--open">
+            <a class="aside__title">
+                <li>광고</li>
+                <p>></p>
+            </a>
+            <a class="aside__sub" href="./ad.html">
+                <li>광고</li>
+            </a>
+        </ul>
+            <ul class="aside__top--open">
+                <!-- 고객센터 -->
+                <a class="aside__title">
+                <li>고객센터</li>
+                <p>></p>
+                </a>
+                <a class="aside__sub"  href="./notice.html">
+                    <li>공지사항</li>
+                    </a>
+                    <a class="aside__sub" href="./faq.html">
+                        <li>자주하는질문</li>
+                        </a>
+                <a class="aside__sub" href="./question.html">
+                <li>문의하기</li>
+                </a>
+            <a class="aside__sub" href="./report.html">
+                <li>신고하기</li>
+                </a>
+            </ul>
+        </aside>
+       
+        <main class="body__item main">
+            <section class="view">
+                <div class="view__main">
+                    <h3 id="title"></h3>
+                    <p>
+                        <span id="date"></span>
+                        <span>조회수 <b id="viewCount">0</b>회</span>
+                        <span>공유횟수 <b id="sharedCount">0</b></span>
+                    </p>
+                </div>
+                <div class="view__user">
+                    <div class="view__user--stars">
+                        <figure id="likedBtn">
+                            <img id="likedImg" src="./res/img/icon_like_df.svg" />
+                            <figcaption id="liked">0</figcaption>
+                        </figure>
+                        <figure id="bookmarkedBtn">
+                            <img id="bookmarkedImg" src="./res/img/icon_bookmark_df.svg" />
+                            <figcaption id="bookmarked">0</figcaption>
+                        </figure>
+                    </div>
+                    <figure class="view__user--des">
+                        <img id="profileImg" src="./res/img/icon_google.svg" alt="프로필이미지" />
+                        <figcaption id="nickname"></figcaption>
+                        <figcaption id="writerInfo"></figcaption>
+                    </figure>
+                    <div class="view__user--ext">
+                        <p>공유하기</p>
+                        <p>게시글 신고하기</p>
+                    </div>
+                </div>
+            </section>
+            <section class="document">
+                <div class="document__text" id="content"></div>
+                <div class="document__tools" id="tagsWrapper"></div>
+            </section>
+            <section class="comment">
+                <header class="comment__header">
+                    <h4>
+                        댓글 (<b id="commentCount">0</b>개)
+                    </h4>
+                </header>
+                <div class="comment__list" id="commentList"></div>
+            </section>
+    
+            <div class="body__item--paging" id="pagination"></div>
+    
+            <article class="comment__add">
+                <textarea id="addCommentContent"></textarea>
+                <button id="addCommentBtn">등록하기</button>
+            </article>
+    
+        </main>
+        <div class="footer">Footer</div>
+    </body>
+    
+
+    
+    </html>

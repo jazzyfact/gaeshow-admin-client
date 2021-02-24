@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/ad.css">
+        <script src="./js/Controller/includeHTML.js"></script>
+    </head>
+ <body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav"></nav>
+    <div class="container">
+        <div class="header__top">
+            <div class="header__top-logout" id="logoutBtn"></div>
+            <div class="header__top--snackbar"></div>
+        </div>
+        <aside class="body__item aside">
+            <div include-html="./header.html"></div>    
+        </aside>
+
+<main class="body__item main">
+    <section class="user__table">
+        <div class="users__table">
+            <div class="table">
+                <span class="table__name">
+                    <h1>상품 목록(상담사)</h1></span></div>
+            
+            </div>
+    
+
+</section>
+
+</main>
+
+<!-- <div class="footer"></div> -->
+</div>
+</body>
+<script>includeHTML();</script>
+<script  defer type="module" src="./js/on.load.js"></script>
+</html>

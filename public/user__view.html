@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAESHOW Admin</title>
+    <link rel="stylesheet" type="text/css" href="./css/user__view.css">
+    <script src="./js/Controller/includeHTML.js"></script>
+</head>
+
+
+<body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav"></nav>
+    <div class="container">
+        <div class="header__top">
+            <div class="header__top-logout" id="logoutBtn"></div>
+            <div class="header__top--snackbar"></div>
+        </div>
+
+     <aside class="body__item aside">
+        <div include-html="./header.html"></div>    
+    </aside>
+       
+  <main class="body__item main">
+    <div>
+        <p class="main--title">
+            회원 상세페이지
+        </p>
+    </div>
+        <section class="main__user">
+            <div>
+                <p class="p__mypage--bold">
+                    프로필사진
+                </p>
+                <img class="mypage__edit--img" id="profileImg" src="" for="profileInput" />
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    로그인타입
+                </p>
+                <p class="mypage__edit--text" id="registeredType" ></p>
+            </div>
+        
+            <div>
+                <p class="p__mypage--bold">
+                    아이디
+                </p>
+                <p class="mypage__edit--text" id="id" ></p>
+            </div>
+        
+            <div>
+                <p class="p__mypage--bold">
+                    닉네임
+                </p>
+                <p class="mypage__edit--text"  id="name"></p>
+            </div>
+           
+            <div>
+                <p class="p__mypage--bold">
+                    생년월일
+                </p>
+                <p class="mypage__edit--text"  id="birthday"></p>
+            </div>
+      
+            <div>
+                <p class="p__mypage--bold">
+                    직종
+                </p>
+                <p class="mypage__edit--text"  id="jobType"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                   업무분야
+                </p>
+                <p class="mypage__edit--text"  id="jobField"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    성별
+                </p>
+                <p class="mypage__edit--text"  id="gender"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                   총 경력
+                </p>
+                <p class="mypage__edit--text"  id="experienceYears"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    근무지역
+                </p>
+                <p class="mypage__edit--text"  id="workingArea"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    근무지역 구
+                </p>
+                <p class="mypage__edit--text"  id="workingAreaDetail"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    연봉
+                </p>
+                <p class="mypage__edit--text"  id="basicSalary"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    근속년수
+                </p>
+                <p class="mypage__edit--text"  id="longevity"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    개발언어
+                </p>
+             <div class="mypage__edit--subbox" id="languages"></div>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    자주사용하는IDE
+                </p>
+                <div class="mypage__edit--subbox" id="ides"></div>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    깃허브주소
+                </p>
+                <p class="mypage__edit--text"  id="git"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    개인포트폴리오 URL
+                </p>
+                <p class="mypage__edit--text"  id="portfolioUrl"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    광고수신
+                </p>
+                <p class="mypage__edit--text"  id="pushStatus"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    개인정보동의
+                </p>
+                <p class="mypage__edit--text"  id="info"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    가입일
+                </p>
+                <p class="mypage__edit--text"  id="createdAt"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    탈퇴일 or 강퇴일
+                </p>
+                <p class="mypage__edit--text"  id="deletedAt"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    강퇴한 관리자
+                </p>
+                <p class="mypage__edit--text"  id="deletedAdmin"></p>
+            </div>
+            <hr size="2" color="#e0e0e0">
+            <div>
+                <p class="p__mypage--bold">
+                    제휴업체
+                </p>
+                <p class="mypage__edit--text"  id="affiliated"></p>
+            </div>
+            <div class="mypage__edit--button" id="affiliatedAddBtn">
+                제휴업체로 변경
+            </div>
+        </section>
+        <section class="comments__table" id="deletedLog">
+            <div class="comments__table" id="deletedLog">
+                <div class="table">
+                    <span class="table__name">
+                        <div class="table__dropdowns">
+                            <h1 id="deletedLogTitle">삭제 기록(log)</h1></span>
+                        </div>
+                        <section class="table__header">
+                            <header class="table__header table__row" id="deletedLog">
+                                <p class="table__row-data">로그번호</p>
+                                <p class="table__row-data">삭제타입</p>
+                                <p class="table__row-data" >삭제이유(상세보기)</p>
+                                <p class="table__row-data">삭제한관리자</p>
+                                <p class="table__row-data">삭제한날짜</p>
+                            </header>
+                        </section>
+                    
+                        <div class="table__content" id="deletedLogSection" ></div>
+                        </div>
+                    </div>
+        </section>
+    </main>
+</div>
+    <!-- <div class="footer"></div> -->
+</body>
+<script>includeHTML();</script>
+<script  defer type="module" src="./js/on.load.js"></script>
+
+</html>

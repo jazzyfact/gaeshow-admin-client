@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" type="text/css" href="./css/portfolio__view.css">
+    <script src="./js/Controller/includeHTML.js"></script>
+</head>
+
+<!-- 회사욕하기 -->
+<body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav"></nav>
+    <div class="container">
+        <div class ="header__top">
+         <div class="header__top-logout">로그아웃</div>
+     </div>
+     <aside class="body__item aside">
+        <div include-html="./header.html"></div>    
+    </aside>
+    
+    <main class="body__item main">
+        
+        <section class="view">
+            <div class="view__main">
+                <h3 id="title">회사욕하기</h3>
+                <p>
+                    <span id="date">2020.11.06 오후 4:07</span>
+                    <span>조회수 <b id="viewCount">10</b>회</span>
+                    <span>공유횟수 <b id="sharedCount">10</b></span>
+                </p>
+            </div>
+            <div class="view__user">
+                <div class="view__user--stars">
+                    <figure id="likedBtn">
+                        <img id="likedImg" src="./res/img/icon_like_df.svg" />
+                        <figcaption id="liked">0</figcaption>
+                    </figure>
+                    <figure id="bookmarkedBtn">
+                        <img id="bookmarkedImg" src="./res/img/icon_bookmark_df.svg" />
+                        <figcaption id="bookmarked">0</figcaption>
+                    </figure>
+                </div>
+                <figure class="view__user--des">
+                    <img id="profileImg" src="./res/img/icon_google.svg" alt="프로필이미지">
+                    <figcaption id="nickname">천옥</figcaption>
+                    <figcaption id="writerInfo" class="hidden"></figcaption>
+                </figure>
+                <div class="view__user--ext">
+                    <p>공유하기</p>
+                    <p>게시글 신고하기</p>
+                </div>
+            </div>
+        </section>
+        <section class="document">
+            <div class="document__text" id="content"></div>
+           <div class="document__tools" id="tagsWrapper"><p class="yellow--bg">1</p><p class="yellow--bg">2</p><p class="yellow--bg">3</p><p class="yellow--bg">4</p><p class="yellow--bg">5</p><p class="yellow--bg">6</p><p class="yellow--bg">7</p><p class="yellow--bg">8</p><p class="yellow--bg">9</p><p class="yellow--bg">0</p></div>
+        </section>
+        <section class="comment">
+            <header class="comment__header">
+                <h4>
+                    댓글 (<b id="commentCount">0</b>개)
+                </h4>
+            </header>
+            <div class="comment__list" id="commentList">
+                <div class="comment__list--item" idx="11">
+                    <p class="comment__list--content">회사욕하기</p>
+                    <p class="comment__list--date">2020.10.25 오후 7:18</p>
+                    <div class="comment__list--user">
+                        <figure class="comment__list--user--info">
+                            <img src="./res/img/icon_google.svg" alt="프로필 이미지">
+                            <figcaption>천옥</figcaption><p></p></figure>
+                            <div class="comment__list--user--post">
+                                <figure>
+                                    <img src="./res/img/icon_like.svg" alt="좋아요 아이콘">
+                                    <figcaption>0</figcaption>
+                                </figure>
+                                <p id="commentAdd">댓글달기</p>
+                                <p>신고하기</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        
+
+        <div class="body__item--paging" id="pagination"></div>
+
+        <article class="comment__add">
+            <textarea id="addCommentContent"></textarea>
+            <button id="addCommentBtn">등록하기</button>
+        </article>
+
+    </main>
+    <div class="footer">Footer</div>
+</body>
+
+
+
+</html>

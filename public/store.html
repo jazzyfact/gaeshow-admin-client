@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/user.css">
+    <script src="./js/Controller/includeHTML.js"></script>
+</head>
+
+<style>
+    .main section {
+        padding: 3rem;
+    }
+
+    .main h3 {
+        font-size: 2rem;
+    }
+
+    .main section div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main section div * {
+        margin: 1rem;
+    }
+</style>
+
+<body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav">
+    </nav>
+    <div class="container">
+        <div class="header__top">
+            <!-- <div class="header__top-logout" id="logoutBtn">로그아웃</div> -->
+            <div class="header__top--snackbar"></div>
+        </div>
+        <aside class="body__item aside">
+            <div include-html="./header.html"></div>    
+        </aside>
+        <main class="body__item main">
+            <!-- 브랜드 추가 -->
+            <section>
+                <h3>브랜드 리스트</h3>
+                <div id="brandList"></div>
+            </section>
+            <section>
+                <h3>브랜드 추가</h3>
+                <h4>브랜드 이름, 음절 (샤오미,ㅅㅇㅁ)</h4>
+                <input type="text" id="brandName" />
+                <input type="text" id="brandSyllable" />
+                <button id="brandAddBtn">추가하기</button>
+                <textarea id="brandNameResult"></textarea>
+            </section>
+            <section>
+                <h3>이미지 업로드</h3>
+                <input type="file" id="imgInput" />
+                <textarea id="imageInputResult"></textarea>
+            </section>
+            <section>
+                <h3>상품 등록</h3>
+                <div>
+                    <h4>category_id -----2: 컴퓨터, 3:모니터, 4: 책상, 6:의자, 7: 기타, 8: 악세사리(기타 카테고리의 하위카테고리)</h4>
+                    <input type='text' id="productCategory" />
+                </div>
+                <div>
+                    <h4>type -----1:자체제작상품 / 2:일반상품 / 3:펀딩상품</h4>
+                    <input type='text' id="productType" />
+                </div>
+                <div>
+                    <h4>brand_id</h4>
+                    <input type='text' id="productBrand" />
+                </div>
+                <div>
+                    <h4>name</h4>
+                    <input type='text' id="productName" />
+                </div>
+                <div>
+                    <h4>price</h4>
+                    <input type='text' id="productPrice" />
+                </div>
+                <div>
+                    <h4>이미지는 위 이미지 업로드하면 스퀸스 1번부터 순서대로 자동 등록 됩니다</h4>
+                </div>
+                <div id="imgList"></div>
+                <!-- <div>
+                    <h4>1) image url </h4>
+                    <input type='text' id="i1-0" />
+                    <h4>1) attach_id</h4>
+                    <input type='text' id="i1-1" />
+                    <h4>1) image type </h4>
+                    <input type='text' value="top_view" id="i1-2" />
+                    <h4>1) image sequence </h4>
+                    <input type='text' value="1" id="i1-3" />
+                </div>
+                <div>
+                    <h4>1) image url </h4>
+                    <input type='text' id="i2-0" />
+                    <h4>1) attach_id</h4>
+                    <input type='text' id="i2-1" />
+                    <h4>1) image type </h4>
+                    <input type='text' value="navi_view" id="i2-2" />
+                    <h4>1) image sequence </h4>
+                    <input type='text' value="1" id="i2-3" />
+                </div>
+                <hr />
+                <div>
+                    <h4>2) image url </h4>
+                    <input type='text' id="i3-0" />
+                    <h4>2) attach_id</h4>
+                    <input type='text' id="i3-1" />
+                    <h4>2) image type </h4>
+                    <input type='text' value="top_view" id="i3-2" />
+                    <h4>2) image sequence </h4>
+                    <input type='text' value="2" id="i3-3" />
+                </div>
+                <div>
+                    <h4>2) image url </h4>
+                    <input type='text' id="i4-0" />
+                    <h4>2) attach_id</h4>
+                    <input type='text' id="i4-1" />
+                    <h4>2) image type </h4>
+                    <input type='text' value="navi_view" id="i4-2" />
+                    <h4>2) image sequence </h4>
+                    <input type='text' value="2" id="i4-3" />
+                </div>
+                <hr />
+                <div>
+                    <h4>3) image url </h4>
+                    <input type='text' id="i5-0" />
+                    <h4>3) attach_id</h4>
+                    <input type='text' id="i5-1" />
+                    <h4>3) image type </h4>
+                    <input type='text' value="top_view" id="i5-2" />
+                    <h4>3) image sequence </h4>
+                    <input type='text' value="3" id="i5-3" />
+                </div>
+                <div>
+                    <h4>3) image url </h4>
+                    <input type='text' id="i6-0" />
+                    <h4>3) attach_id</h4>
+                    <input type='text' id="i6-1" />
+                    <h4>3) image type </h4>
+                    <input type='text' value="navi_view" id="i6-2" />
+                    <h4>3) image sequence </h4>
+                    <input type='text' value="3" id="i6-3" />
+                </div>
+                <hr />
+                <div>
+                    <h4>4) image url </h4>
+                    <input type='text' id="i7-0" />
+                    <h4>4) attach_id</h4>
+                    <input type='text' id="i7-1" />
+                    <h4>4) image type </h4>
+                    <input type='text' value="top_view" id="i7-2" />
+                    <h4>4) image sequence </h4>
+                    <input type='text' value="4" id="i7-3" />
+                </div>
+                <div>
+                    <h4>4) image url </h4>
+                    <input type='text' id="i8-0" />
+                    <h4>4) attach_id</h4>
+                    <input type='text' id="i8-1" />
+                    <h4>4) image type </h4>
+                    <input type='text' value="navi_view" id="i8-2" />
+                    <h4>4) image sequence </h4>
+                    <input type='text' value="4" id="i8-3" />
+                </div>
+                <hr />
+                <div>
+                    <h4>5) image url </h4>
+                    <input type='text' id="i8-0" />
+                    <h4>5) attach_id</h4>
+                    <input type='text' id="i8-1" />
+                    <h4>5) image type </h4>
+                    <input type='text' value="top_view" id="i8-2" />
+                    <h4>5) image sequence </h4>
+                    <input type='text' value="5" id="i8-3" />
+                </div>
+                <div>
+                    <h4>5) image url </h4>
+                    <input type='text' id="i9-0" />
+                    <h4>5) attach_id</h4>
+                    <input type='text' id="i9-1" />
+                    <h4>5) image type </h4>
+                    <input type='text' value="navi_view" id="i9-2" />
+                    <h4>5) image sequence </h4>
+                    <input type='text' value="5" id="i9-3" />
+                </div> -->
+                <button id="productAddBtn">등록하기</button>
+                <textarea></textarea>
+            </section>
+        </main>
+
+
+        <!-- <div class="footer"></div> -->
+    </div>
+
+</body>
+<script>includeHTML();</script>
+<script defer type="module" src="./js/on.load.js"></script>
+
+</html>

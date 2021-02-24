@@ -1,0 +1,100 @@
+@import './reset';
+@import './ui';
+@import './default.scss';
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    //   grid-template-rows: 100px 1fr 100px;
+    // 5vh로 해야 푸터가 안늘어남!
+    // grid-template-rows: 5vh 90vh 5vh;
+
+    grid-template-rows: 3vh minmax(200vh, auto) ;
+}
+.footer {
+    background-color: #343a40;
+    grid-column: 1 / span 6;
+}
+
+
+.body__item:nth-child(3) {
+    grid-column: 2 / span 6;
+}
+
+
+.main {
+    background-color: #ffffff;
+    grid-column: 1 / span 6;
+    margin: 6rem auto;
+    margin-bottom: 30rem;
+    min-width: 30%; //반응형 웹에서 크기 조절 할 때 사용, 디바이스 크기가 30% 이하로 줄어드는거 방지
+    height: calc(100vh - 400px); //브라우저 높이에 맞게 크기를 계산한다.
+
+    .input__login {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+
+        > h1 {
+            //gaeshow admin
+            font-size: $section__header--title--size;
+            align-self: center;
+        }
+
+        &--title {
+            //아이디
+            align-self: flex-start;
+            font-size: $section__header--title--size;
+            margin-bottom: 1rem 0;
+            color: black;
+        }
+
+        &--text {
+            margin-top: 1rem;
+            font-size: 1rem;
+            height: 2rem;
+            padding: 0.5rem 0 0.5rem 0.5rem;
+            border: 1px solid black;
+            color: #343a40;
+            ::placeholder {
+                //힌트
+                color: #909091;
+            }
+            
+        }
+
+        &--btn {
+            //로그인버튼
+            width: 100%;
+            height: 4rem;
+            background-color: black;
+            color: #dddddd;
+            border: none;
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+.category__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #707070;
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    font-size: 1.2rem;
+    &--wrapper {
+        position: relative;
+    }
+   
+    &--option {
+        margin-top: 1rem;
+        font-size: 1rem;
+        height: 3rem;
+        padding: 0.5rem 0 0.5rem 0.5rem;
+    }
+}

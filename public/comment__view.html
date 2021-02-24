@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/comment__view.css">
+    <script src="./js/Controller/includeHTML.js"></script>
+</head>
+<header class="body__item header" id="headerBanner"></header>
+<nav class="body__item nav" id="headerNav"></nav>
+<div class="container">
+    <div class ="header__top">
+     <!-- <div class="header__top-logout" id="logoutBtn">로그아웃</div> -->
+ </div>
+ <aside class="body__item aside">
+    <div include-html="./header.html"></div>  
+</aside>
+   
+<main class="body__item main">
+    <header class="header">
+        <h3></h3>
+        <p></p>
+    </header>
+
+
+    <section class='appraisal'>
+        <header class="appraisal__header">
+            <h3></h3>
+          
+            
+        </header>
+        <ul class="appraisal__list">
+            <li class="appraisal__item">
+                <div class="appraisal__item--category" >
+                    <span id="categoryType"></span>
+                    <span id="categoryName"></span>
+                </div>
+                <!-- <div class="appraisal__item--category" id="categoryName"></div> -->
+                <div class="appraisal__item--user">
+                    <figure class="header__user--des">
+                        <img id="profileImageUrl" src="./res/img/icon_google.svg" alt="프로필이미지" />
+                        <figcaption id="nickname"></figcaption>
+                        <figcaption id="writerUserInfo"></figcaption>
+                    </figure>
+                    <div>
+                       <span>작성일 <span id="createdAt"></span></span> 
+                       <span id="deleteTitle">삭제일 <span id="deletedAt"></span></span> 
+                        
+                    </div>
+                </div>
+              
+                <div class="appraisal__item--section">
+                    <h3 class="appraisal__item--subTitle" id="goodTitle">댓글내용</h3>
+                    <div id="content" ></div>
+                </div>
+              
+            </li>
+        </ul>
+        
+    </section>
+    <section class="comments__table" id="deletedLog">
+        <div class="comments__table">
+            <div class="table">
+                <span class="table__name">
+                    <div class="table__dropdowns">
+                        <h1 id="deletedLogTitle">삭제 기록(log)</h1></span>
+                    </div>
+                    <section class="table__header">
+                        <header class="table__header table__row" id="deletedLog">
+                            <p class="table__row-data">로그번호</p>
+                            <p class="table__row-data">삭제타입</p>
+                            <p class="table__row-data" >삭제이유(상세보기)</p>
+                            <p class="table__row-data">삭제한관리자</p>
+                            <p class="table__row-data">삭제한날짜</p>
+                        </header>
+                    </section>
+                
+                    <div class="table__content" id="deletedLogSection" ></div>
+                    </div>
+                </div>
+            </section>
+
+
+</main>
+
+</body>
+<script>includeHTML();</script>
+<script  defer type="module" src="./js/on.load.js"></script>
+
+</html>

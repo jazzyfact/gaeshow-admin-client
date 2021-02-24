@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" type="text/css" href="./css/salary.css">
+</head>
+
+<body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav">
+    </nav>
+    <div class="container">
+        <div class ="header__top">
+         <!-- <div class="header__top-logo">GAESHOW Admin</div>
+         <div class="header__top-search">Search</div>--> 
+         <div class="header__top-logout" id="logoutBtn">로그아웃</div>
+         <div class="header__top--snackbar" ></div>
+     </div>
+   <!-- 업무얘기공유 -->
+    <aside class="body__item aside">
+        <p>GAESHOW Admin</p> 
+        <ul class="aside__top--open">
+           
+                <!-- 회원관리 -->
+                <a class="aside__title">
+                    <li>회원관리</li>
+                    <p>></p>
+                </a>
+                <a class="aside__sub" href="./index.html">
+                    <li>유저</li>
+                </a>
+                <a class="aside__sub" href="./admin__list.html">
+                    <li>관리자</li>
+                </a>
+    
+        </ul>
+        <!-- 커뮤니티관리 -->
+        <ul class="aside__top--open">
+            <a class="aside__title">
+                <li>커뮤니티관리</li>
+                <p>></p>
+            </a>
+            <a class="aside__sub" href="./board.html">
+                <li>게시글</li>
+            </a>
+            <a class="aside__sub" href="./ide.html">
+                <li>IDE 추천</li>
+            </a>
+            <a class="aside__sub" href="./language.html">
+                <li>언어 추천</li>
+            </a>
+            <a class="aside__sub" href="./comments.html">
+                <li>댓글</li>
+            </a>
+            
+        </ul>
+              <!-- 광고 -->
+        <ul class="aside__top--open">
+            <a class="aside__title">
+                <li>광고</li>
+                <p>></p>
+            </a>
+            <a class="aside__sub" href="./ad.html">
+                <li>광고</li>
+            </a>
+        </ul>
+        <ul class="aside__top--open">
+            <!-- 고객센터 -->
+            <a class="aside__title">
+            <li>고객센터</li>
+            <p>></p>
+            </a>
+            <a class="aside__sub"  href="./notice.html">
+                <li>공지사항</li>
+                </a>
+                <a class="aside__sub" href="./faq.html">
+                    <li>자주하는질문</li>
+                    </a>
+            <a class="aside__sub" href="./question.html">
+            <li>문의하기</li>
+            </a>
+        <a class="aside__sub" href="./report.html">
+            <li>신고하기</li>
+            </a>
+        </ul>
+    </aside>
+    <main class="body__item main">
+        <header class="header">
+            <h3>개발자 평균 연봉</h3>
+            <p>본 데이터는 개쇼 회원들의 <b>2020.08.20</b> 기준 평균 연봉 데이터 입니다.</p>
+        </header>
+        <section class="salary">
+            <h3>5239만원</h3>
+            <div class="salary__ex">
+                <p>지난달 대비</p>
+                <span class="red">
+                    <p>▲</p>
+                    <p>1234</p>
+                    <p>만원</p>
+                </span>
+            </div>
+            <div class="salary__select">
+                <label>▼</label>
+                <select>
+                    <option value="0" selected>년차별</option>
+                    <option value="1">개발자</option>
+                </select>
+            </div>
+            <div class="salary__select">
+                <label>▼</label>
+                <select>
+                    <option value="0" selected>직군별</option>
+                    <option value="1">개발자</option>
+                </select>
+            </div>
+        </section>
+        <section class="chart"></section>
+        <section class="top">
+            <h3>연봉 TOP3 직군</h3>
+            <ul>
+                <li class="top__item">
+                    <p class="top__item--rank">1</p>
+                    <span class="top__item--position">
+                        <p class="name">웹 개발자</p>
+                        <p class="count">(4123명)</p>
+                    </span>
+                    <p class="top__item--text">주로 사용하는 언어</p>
+                    <span class="top__item--lang">
+                        <p>HTML</p>
+                        <p>HTML</p>
+                        <p>HTML</p>
+                        <p>HTML</p>
+                    </span>
+                    <p class="top__item--text">평균연봉</p>
+                    <p class="top__item--salary">5613만원</p>
+                </li>
+                <li class="top__item">
+                    <p class="top__item--rank">1</p>
+                    <span class="top__item--position">
+                        <p class="name">웹 개발자</p>
+                        <p class="count">(4123명)</p>
+                    </span>
+                    <p class="top__item--text">주로 사용하는 언어</p>
+                    <span class="top__item--lang">
+                        <p>HTML</p>
+                        <p>HTML</p>
+                        <p>HTML</p>
+                        <p>HTML</p>
+                    </span>
+                    <p class="top__item--text">평균연봉</p>
+                    <p class="top__item--salary">5613만원</p>
+                </li>
+                <li class="top__item">
+                    <p class="top__item--rank">1</p>
+                    <span class="top__item--position">
+                        <p class="name">웹 개발자</p>
+                        <p class="count">(4123명)</p>
+                    </span>
+                    <p class="top__item--text">주로 사용하는 언어</p>
+                    <span class="top__item--lang">
+                        <p>HTML</p>
+                        <p>HTML</p>
+                        <p>HTML</p>
+                        <p>HTML</p>
+                    </span>
+                    <p class="top__item--text">평균연봉</p>
+                    <p class="top__item--salary">5613만원</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <div class="footer">Footer</div>
+</body>
+
+
+
+</html>

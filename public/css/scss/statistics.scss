@@ -1,0 +1,65 @@
+@import './mixin';
+
+nav {
+  order: 2;
+  width: 8vw;
+  padding: 1vw; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  order: 3;
+  width: 88vw;
+  height: 150vh;
+  padding: 1vw; }
+
+/* card list */
+.card__list-wrap {
+}
+
+.card__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.card__list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 29%;
+    padding: 0 1rem;
+}
+
+.category__list-item-title {
+    font-size: 1.5rem;
+    padding: 2vh 0;
+}
+svg {
+    width: 18vw;
+    height: 43vh;
+}
+
+@include tablet {
+    nav {
+        width: 13vw;
+    }
+    section {
+        width: 83vw;
+    }
+
+    .card__list-item {
+        width: 40%;
+    }
+}
+
+@include mobile {
+    .card__list-item {
+        width: 100%;
+    }
+}

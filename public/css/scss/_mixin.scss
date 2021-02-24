@@ -1,0 +1,67 @@
+// css를 묶어서 재사용 할 수 있는 모듈을 만들어 주는 파일
+
+@import './variables'; //변수 선언한 파일 가져오기
+
+//디바이스 별 반응형 웹
+@mixin mobile {
+    @media (min-width: 0px) and (max-width: #{$breakpoint-tablet - 1px}) {
+        //미디어 쿼리에서 변수 적용
+        @content; //믹스인이 사용 될 때 넘겨받는 콘텐드가 들어감
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$breakpoint-desktop}) {
+        @content;
+    }
+}
+
+.paging {
+    display: flex;
+    flex-direction: column;
+}
+.body__item {
+    &--paging {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0;
+
+        * {
+            //간격
+            padding: 0 0.4rem;
+        }
+
+        > ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            li {
+                cursor: pointer;
+            }
+        }
+
+        &--wrapper {
+            display: flex;
+            flex-direction: row;
+            font-size: 0.9rem;
+            > a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .underbar {
+                // text-decoration: underline;
+                background-color: black;
+                border-radius: 100%;
+                color: #fff;
+            }
+        }
+    }
+}

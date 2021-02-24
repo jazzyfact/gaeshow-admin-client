@@ -1,0 +1,158 @@
+@import './reset';
+@import './ui';
+@import './default.scss';
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    // grid-auto-rows: minmax(25px, auto) minmax(50px, auto) minmax(500px, auto) 250px; //최소 높이가 25px, 50px, 500px 넘어가면 자동으로 늘어남
+
+    // 여기 수정해야 할 수도 있음! 푸터가이상함, 지금은 푸터가 늘어나지않고 잘나옴
+    grid-template-rows: 5vh minmax(100vh, auto) 5vh;
+}
+
+.footer {
+    background-color: #343a40;
+    grid-column: 1 / span 6;
+}
+
+.main {
+    margin: 0 16.6%;
+    background-color: #ffffff;
+    //개발자 평균 연봉
+    .header {
+        margin: 2rem 0;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        > h3 {
+            font-size: 2rem;
+        }
+        > p {
+            margin-top: 1rem;
+            font-size: 1.15rem;
+            color: #767676;
+        }
+    }
+    //연봉
+    .salary {
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        > h3 {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        &__ex {
+            height: 3rem;
+            margin: 0 2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            > span {
+                display: flex;
+                flex-direction: row;
+                font-size: 1rem;
+            }
+        }
+        &__select {
+            position: relative;
+            margin: 0 1rem;
+            > label {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+
+            > select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                border: 1px solid #707070;
+                min-width: 15rem;
+                height: 3rem;
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+            }
+        }
+    }
+    .chart {
+        margin: 3rem 0;
+        min-height: 500px;
+        background-color: turquoise;
+    }
+    //연봉 top3직군
+    .top {
+        margin-bottom: 10rem;
+        > h3 {
+            margin: 3rem 0;
+            font-size: 2rem;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 2rem;
+            color: #151515;
+            &--rank {
+                font-size: 2.2rem;
+                font-weight: 300;
+                background-color: white;
+                width: 3rem;
+                height: 3rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+            }
+            &--position {
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0 2rem;
+                .name {
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+                .count {
+                    font-size: 1rem;
+                    font-weight: 300;
+                    padding: 0 1rem;
+                }
+            }
+            &--text {
+                flex: 1;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            &--lang {
+                flex: 2;
+                display: flex;
+                flex-direction: row;
+                > p {
+                    padding: 0.5rem 1rem;
+                    background-color: white;
+                    border-radius: 2rem;
+                    margin: 0 0.5rem;
+                }
+            }
+            &--salary {
+                flex: 1;
+                font-size: 1rem;
+                font-weight: 300;
+            }
+        }
+    }
+}

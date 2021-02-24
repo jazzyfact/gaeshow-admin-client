@@ -1,0 +1,289 @@
+@import './reset';
+@import './ui';
+@import './default.scss';
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    //   grid-template-rows: 100px 1fr 100px;
+    // 5vh로 해야 푸터가 안늘어남!
+    // grid-template-rows: 5vh 90vh 5vh;
+    grid-template-rows: 3vh minmax(180vh, auto) ;
+}
+.footer {
+    background-color: #343a40;
+    grid-column: 1 / span 6;
+}
+
+//문의사항 상세보기
+.main {
+    margin: 3rem 16.6%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+
+    // .type__status{
+    //     // font-size: 1.3rem;
+    //     // padding: 0.2rem 0.5rem;
+    //     // cursor: pointer;
+    //     // background-color: white; 
+    //     // color: black; 
+    //     // border: 2px solid #0b055e;
+    //     // justify-content: flex-end;
+       
+    // }
+    .type{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        // border-top: 1px solid #000000;
+        // border-bottom: 1px solid #000000;
+        // border-right: 1px solid #000000;
+        // border-left:  1px solid #000000;;
+        // background-color: #757579;
+        border-bottom: 1px solid #000000;
+      
+       
+        &__title{
+            flex-direction: column;
+            // border-right: 1px solid #000000;
+            // background-color: #0b055e;
+            margin-bottom: 1rem;
+            color: black;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 0.3rem 0.3rem;
+        }
+
+        &__data{
+            font-weight: bold;
+            color: black;
+         
+        }
+        &__view{
+            font-weight: bold;
+            color: black;
+            margin-left: 2rem  !important;
+        }
+        
+
+        > span{
+            margin-left: 1rem;
+
+           
+        }
+
+        &__change{
+            background-color: #000000;
+            color:#ffffff;
+            padding:  0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        // > button {
+        //     background-color: #000000;
+        //     color:#ffffff;
+        //     cursor: pointer;
+        // }
+
+        
+        // &__button{
+        //     background-color: #000000;
+        //     color:#ffffff;
+        //     font-size: 1rem;
+        //     height: 1rem;
+        //     width: 3rem;
+        // }
+
+        &__status{
+            justify-content: flex-start;
+            align-self: flex-start;
+            margin-left: 10rem;
+            font-size: 1rem;
+            padding: 0.2rem 0.5rem;
+            cursor: pointer;
+            background-color: white; 
+            color: black; 
+            // border: 2px solid #0b055e;
+            justify-content: flex-end;
+        }
+        &__status:hover{
+            cursor: pointer;
+            background-color: #0b055e;
+            padding:0.5rem;
+            color: white;
+            text-decoration: none;
+            margin-top:2rem;
+        }
+
+
+    }
+  
+    
+
+    .question {
+        > h3 {
+            margin: 2.5rem 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        &__des {
+            font-size: 1rem;
+            color: #676767;
+        }
+        &__content {
+            margin: 4rem 0;
+            font-size: 1rem;
+            line-height: 1.35;
+        }
+
+       
+    }
+
+//개시물 내용
+.document {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    //태그박스높이
+    &__text {
+        min-height: 300px;
+    }
+
+    &__title{
+        font-weight: bold;
+        color: black;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+    
+
+    #content {
+        border: none;
+    }
+}
+
+    .comment {
+        margin: 4rem 0;
+        // border-top: 1px solid #dddddd;
+        > h1 {
+            font-size: 1rem;
+            // font-weight: bold;
+          
+            margin-top: 1rem;
+        }
+
+        &__title{
+            font-weight: bold;
+            color: black;
+            // margin-left: 1rem;
+            font-size: 1.2rem;
+        }
+        > h4 {
+            font-size: 1rem;
+        }
+        &__item {
+            padding: 1.5rem 0;
+            // border-bottom: 1px solid #dddddd;
+            > * {
+                margin: 1rem 0;
+            }
+            > p {
+                font-size: 1rem;
+                line-height: 1.53;
+                color: black; 
+                // font-weight: bold;
+            }
+            > h5 {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            > span{
+                // padding:0 0.2rem;
+                // cursor: pointer;
+                // background-color: white; 
+                // color: black; 
+                // border: 2px solid #0b055e;
+                font-size: 0.7rem;
+            }
+            >span:hover{
+                cursor: pointer;
+                background-color: #0b055e;
+                color: white;
+                padding:0.5rem;
+                text-decoration: none;
+            }
+        }
+
+        .no-js { display:none; }
+    
+        
+        
+
+        //답변 추가,수정
+        &__add {
+            display: flex;
+            flex-direction: row;
+            font-size :2rem;
+            padding: 3rem 0;
+
+           
+           
+            > textarea {
+                flex: 1;
+                padding: 1rem;
+                // font-size :2rem;
+                min-height: 5rem;
+                font-size: rem;
+               
+               
+            }
+            //답변창 힌트글씨
+            ::placeholder {
+                color: rgb(148, 144, 144);
+                font-size: 1.2rem;
+                font-weight: 400;
+                opacity: 1; /* Firefox */
+              }
+            > button {
+                background-color: $cb;
+                color: $cw;
+                border: none;
+                padding: 0 1rem;
+                font-size: 1.2rem;
+                margin-left: 1rem;
+                cursor: pointer;
+            }
+            // border-bottom: 1px solid #dddddd;
+        }
+    }
+
+    .button {
+        display: flex;
+        justify-content: flex-end;
+        > button {
+            background-color: $cb;
+            color: $cw;
+            padding: 0.5rem 2rem;
+            font-size: 1.2rem;
+            justify-self: flex-end;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.main .type__button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    font-size: 4rem;
+    justify-self: flex-end;
+    border: none;
+    cursor: pointer;
+}
+
+//퀼에디터 굵기 표시
+strong {
+    font-weight: bold;
+}

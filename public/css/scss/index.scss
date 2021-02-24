@@ -1,0 +1,65 @@
+@import './mixin';
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100vw;
+    order: 1;
+    border-bottom: 1px solid lightgray;
+}
+
+nav {
+    order: 2;
+    width: 8vw;
+    padding: 1vw;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    order: 3;
+    width: 88vw;
+    height: 100vh;
+    padding: 1vw;
+}
+
+aside {
+    display: none;
+}
+
+footer {
+    order: 5;
+    width: 100vw;
+    padding: 1rem;
+    border-top: 1px solid lightgray;
+    text-align: center;
+}
+
+@include mobile {
+    header {
+        width: 100vw;
+        order: 1;
+        border-bottom: 1px solid lightgray;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    section {
+        width: 100vw;
+    }
+
+    footer {
+        order: 4;
+        width: 100vw;
+        padding: 1rem;
+        border-top: 1px solid lightgray;
+        text-align: center;
+    }
+}

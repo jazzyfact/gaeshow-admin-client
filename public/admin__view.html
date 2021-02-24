@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/admin__view.css">
+    <script src="./js/Controller/includeHTML.js"></script>
+</head>
+
+
+<body>
+    <header class="body__item header" id="headerBanner"></header>
+    <nav class="body__item nav" id="headerNav"></nav>
+    <div class="container">
+        <div class ="header__top">
+         <!-- <div class="header__top-logout">로그아웃</div> -->
+     </div>
+     <aside class="body__item aside">
+        <div include-html="./header.html"></div>    
+    </aside>
+   
+  <main class="body__item main">
+    <div>
+        <p class="main--title">
+            관리자 상세페이지
+        </p>
+    </div>
+        <section>
+            <div>
+                <p class="p__mypage--bold">
+                    아이디
+                </p>
+                <p class="mypage__edit--text" id="id" ></p>
+            </div>
+        
+            <div>
+                <p class="p__mypage--bold">
+                    이름
+                </p>
+                <p class="mypage__edit--text"  id="name"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    닉네임
+                </p>
+                <p class="mypage__edit--text"  id="nickname"></p>
+            </div>
+      
+            <div>
+                <p class="p__mypage--bold">
+                    등급
+                </p>
+                <p class="mypage__edit--text"  id="grade"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    추가한 관리자
+                </p>
+                <p class="mypage__edit--text"  id="createAdmin"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    가입일
+                </p>
+                <p class="mypage__edit--text"  id="createdAt"></p>
+            </div>
+            <div>
+                <p class="p__mypage--bold">
+                    탈퇴일
+                </p>
+                <p class="mypage__edit--text"  id="deletedAt"></p>
+            </div>
+
+            <hr size="2" color="#e0e0e0">
+            <div>
+                <p class="p__mypage--bold">
+                    관리자 등급 변경
+                </p>
+                <select class="category__select--wrapper" id="gradeSelector" autocomplete="off">
+                    <!-- <option value=""  selected>선택하세요</option> -->
+                    <option value="1" >총괄 책임자</option>
+                    <option value="2">상품 매니저</option>
+                    <option value="3">게시물 매니저</option>  
+                    <option value="4">상품 상담사</option>  
+                </select>
+                <div class="mypage__edit--button" id="modifyGradeBtn">
+                    등급 변경
+                </div>
+            </div>
+            <hr size="2" color="#e0e0e0">
+            <div>
+                <p class="p__mypage--bold" id="recoverTitle">
+                    관리자 복구
+                </p>
+                <div class="mypage__edit--button" id="recover">
+                    복구
+                </div>
+            </div>
+            <hr size="2" color="#e0e0e0" id="line">
+            <div>
+                <p class="p__mypage--bold">
+                  비밀번호 초기화
+                </p>
+              
+            </div>
+
+            <div class="mypage__edit--button" id="resetPasswrod">
+                비밀번호 초기화
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+    <!-- <div class="footer">Footer</div> -->
+</body>
+<script>includeHTML();</script>
+<script  defer type="module" src="./js/on.load.js"></script>
+
+</html>
