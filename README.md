@@ -90,7 +90,7 @@ README.md                          : 프로젝트와 관련된 내용을 적어�
 
 ```
 /_mixin.scss                        :   반응형 관련 파일
-/_variables.scss                    :   속석값에 들어갈 변수 정의 파일
+/_variables.scss                    :   속성값에 들어갈 변수 정의 파일
 /default.scss                       :   페이지 주요 큰틀에 관련된 레이아웃 설정 scss 파일
 /reest.scss                         :   브라우저별 다른 엘러먼트 속성값 초기화 시켜 주는 파일
 /ui.scss                            :   세부적인 아이템, 공통적으로 사용하는 아이템 들의 정의되어 있는 스타일 파일
