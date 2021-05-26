@@ -16,9 +16,18 @@
 2. 회원,커뮤니티,광고,고객센터 관리
 
 ## 상세내용
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/690e59be-cc8e-4cf3-a152-15e4a3202300/.png](https://s3-us-west-2.
+azonaws.com/secure.notion-static.com/690e59be-cc8e-4cf3-a152-15e4a3202300/.png)
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a7b90499-c113-4bcf-bffb-122e266fe1ca/.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a7b90499-c113-4bcf-bffb-122e266fe1ca/.jpg)
+![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7dc77e1b-ed20-423e-8351-945f4809ecd2/.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7dc77e1b-ed20-423e-8351-945f4809ecd2/.png)
 
 ## 사용기술
+**언어** : JavaScript ES6, SCSS, CSS, HTML
+**통신** : REST API 
+**구조** : MVC 패턴, Singleton 패턴
+**IDE** : VS Code
 
+**라이브러리** : Quill editor
 ## 프로젝트 회고
 ### ❓다중필터 및 페이징 숫자 버튼 클릭시 여러개의 값(기존에 선택했던 값)이 유지가 안되는 문제
 
