@@ -9,7 +9,8 @@
 프론트엔드 담당 1명, 기여도 100%
 
 ## 링크
-영상 : https://youtu.be/VWmlm0Hd1RE
+영상 
+[![Video Label](http://img.youtube.com/vi/VWmlm0Hd1RE/0.jpg)](https://youtu.be/VWmlm0Hd1RE)
 
 ## 기능
 1. 관리자 및 개쇼 서비스 회원 관리
