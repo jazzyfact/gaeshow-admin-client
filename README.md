@@ -14,6 +14,10 @@
 
 [![Video Label](http://img.youtube.com/vi/VWmlm0Hd1RE/0.jpg)](https://youtu.be/VWmlm0Hd1RE)
 
+광고목록
+
+[![Video Label](http://img.youtube.com/vi/xmFh1zoppg4/0.jpg)](https://www.youtube.com/xmFh1zoppg4)
+
 ## 기능
 - **로그인, 로그아웃, 내정보관리**
 - **관리자 등급 별로 열람가능한 페이지 설정**
