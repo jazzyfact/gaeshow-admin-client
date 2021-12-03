@@ -52,7 +52,7 @@
         5. 신고 처리 상태 변경(확인전/처리중/처리완료)
 
 ## 상세내용
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/690e59be-cc8e-4cf3-a152-15e4a3202300/.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/690e59be-cc8e-4cf3-a152-15e4a3202300/.png)
+https://user-images.githubusercontent.com/51365114/144569817-ac12e9cf-bb89-49d2-af8d-6534bc8892f0.png
 
 
 ## 사용기술
