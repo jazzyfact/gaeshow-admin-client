@@ -8,15 +8,19 @@
 ## 담당업무
 프론트엔드 담당 1명, 기여도 100%
 
-## 링크
-영상 
+## 링크(동영상)
 
+커뮤니티관리
 
-[![Video Label](http://img.youtube.com/vi/VWmlm0Hd1RE/0.jpg)](https://youtu.be/VWmlm0Hd1RE)
+[![Video Label](http://img.youtube.com/vi/JmIiLeRNh8M/0.jpg)](https://www.youtube.com/JmIiLeRNh8M)
 
 광고목록
 
 [![Video Label](http://img.youtube.com/vi/xmFh1zoppg4/0.jpg)](https://www.youtube.com/xmFh1zoppg4)
+
+고객센터
+공지사항,자주하는 질문
+[![Video Label](http://img.youtube.com/vi/O25PkLYeNAM/0.jpg)](https://www.youtube.com/O25PkLYeNAM)
 
 ## 기능
 - **로그인, 로그아웃, 내정보관리**
