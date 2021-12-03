@@ -52,7 +52,7 @@
         5. 신고 처리 상태 변경(확인전/처리중/처리완료)
 
 ## 상세내용
-https://user-images.githubusercontent.com/51365114/144569817-ac12e9cf-bb89-49d2-af8d-6534bc8892f0.png
+![개쇼관리자](https://user-images.githubusercontent.com/51365114/144569817-ac12e9cf-bb89-49d2-af8d-6534bc8892f0.png)
 
 
 ## 사용기술
